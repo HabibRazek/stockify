@@ -1,0 +1,17 @@
+{
+  "NavBar": {
+    "welcome": "Bienvenue sur Stockify 👋",
+    "description": "Gérez vos besoins en emballage avec facilité.",
+    "login": "Connexion",
+    "register": "S'inscrire"
+  },
+  "LocaleSwitcher": {
+    "label": "Changer de langue",
+    "locale": "{locale, select, fr {🇫🇷 Français} en {🇺🇸 English} other {Inconnu}}"
+  },
+  "LocaleLayout": {
+    "title": "Stockify",
+    "description": "Stockify est une plateforme qui vous aide à gérer vos besoins en emballage avec facilité.",
+    "keywords": "factures, facturation, finance, paiements"
+  }
+}

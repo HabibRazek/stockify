@@ -1,0 +1,17 @@
+{
+  "NavBar": {
+    "welcome": "Welcome to Stockify 👋",
+    "description": "Manage your packaging needs with ease.",
+    "login": "Login",
+    "register": "Register"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, fr {🇫🇷 Français} en {🇺🇸 English} other {Unknown}}"
+  },
+  "LocaleLayout": {
+    "title": "Stockify",
+    "description": "Stockify is a platform that helps you manage your packaging needs with ease.",
+    "keywords": "invoices, billing, finance, payments"
+  }
+}
