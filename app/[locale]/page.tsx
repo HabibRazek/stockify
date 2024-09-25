@@ -1,4 +1,4 @@
-import NavBar from "@/components/nav/NavBar";
+import LandingPage from "@/components/landing/LandingPage";
 import { unstable_setRequestLocale } from 'next-intl/server';
 
 
@@ -10,7 +10,7 @@ export default function Home({ params: { locale } }: Props) {
   unstable_setRequestLocale(locale);
   return (
     <div>
-      <NavBar />
+      <LandingPage />
     </div>
   );
 }

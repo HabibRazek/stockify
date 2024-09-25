@@ -7,6 +7,9 @@ import { Button } from "../ui/button";
 import ThemeSwitch from "../togglers/ThemeSwitch";
 import { useTranslations } from "next-intl";
 import LocaleSwitcher from "../togglers/LocaleSwitcher";
+import { Link } from "@/navigation";
+import { LoginButton } from "../auth/login-button";
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,10 +20,11 @@ const Navbar = () => {
     <nav className="md:w-10/12 mx-auto flex items-center justify-between p-4 bg-transparent">
       {/* Logo */}
       <div className="text-xl font-bold text-black dark:text-white">
-        <span>Stockify</span>
+        <Link href={"/"}>
+          Stockify
+        </Link>
       </div>
 
-      {/* Burger Menu Icon (shown on small screens) */}
       <div className="md:hidden">
         <button
           onClick={toggleMenu}
@@ -34,20 +38,17 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Links (shown on larger screens) */}
       <div className="hidden md:flex items-center space-x-4">
-        <Button className="rounded-full border border-black text-black bg-white hover:bg-black hover:text-white transition-all dark:text-white dark:bg-black dark:border-white dark:hover:bg-white dark:hover:text-black">
-          {t("login")}
-        </Button>
-        <Button className="rounded-full border border-black text-black bg-white hover:bg-black hover:text-white transition-all dark:text-white dark:bg-black dark:border-white dark:hover:bg-white dark:hover:text-black">
-          {t("register")}
-        </Button>
+        <LoginButton>
+          <Button variant={"link"}>
+            {t("connectNow")}
+          </Button>
+        </LoginButton>
 
         <div className="flex items-center space-x-4">
           <div className="rounded-lg bg-transparent focus:outline-none">
             <ThemeSwitch />
           </div>
-
           <div className="rounded-lg bg-transparent focus:outline-none">
             <LocaleSwitcher />
           </div>
@@ -64,7 +65,6 @@ const Navbar = () => {
               transition={{ duration: 0.35 }}
               className="absolute top-0 right-0 w-3/4 h-screen bg-white shadow-xl dark:bg-black p-4 flex flex-col space-y-6 z-50"
             >
-              {/* Close button at the top-right inside the menu */}
               <div className="flex justify-end">
                 <button
                   onClick={toggleMenu}
@@ -93,18 +93,15 @@ const Navbar = () => {
                 className="w-full border-t border-gray-300 dark:border-gray-600 my-4"
               />
 
-              <Button className="w-full rounded-full border border-black text-black bg-white hover:bg-black hover:text-white transition-all dark:text-white dark:bg-black dark:border-white dark:hover:bg-white dark:hover:text-black">
-                {t("login")}
-              </Button>
-              <Button className="w-full rounded-full border border-black text-black bg-white hover:bg-black hover:text-white transition-all dark:text-white dark:bg-black dark:border-white dark:hover:bg-white dark:hover:text-black">
-                {t("register")}
-              </Button>
-
+              <LoginButton>
+                <Button className="w-full rounded-full px-6 py-3 font-semibold text-white bg-black hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-300 transition-all shadow-lg">
+                  {t("connectNow")}
+                </Button>
+              </LoginButton>
               <div className="flex items-center justify-center space-x-4 mt-4">
                 <div className="rounded-lg bg-transparent focus:outline-none">
                   <ThemeSwitch />
                 </div>
-
                 <div className="rounded-lg bg-transparent focus:outline-none">
                   <LocaleSwitcher />
                 </div>

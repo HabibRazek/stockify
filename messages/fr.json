@@ -2,8 +2,7 @@
   "NavBar": {
     "welcome": "Bienvenue sur Stockify 👋",
     "description": "Gérez vos besoins en emballage avec facilité.",
-    "login": "Connexion",
-    "register": "S'inscrire"
+    "connectNow": "Connectez-vous maintenant"
   },
   "LocaleSwitcher": {
     "label": "Changer de langue",
@@ -13,5 +12,42 @@
     "title": "Stockify",
     "description": "Stockify est une plateforme qui vous aide à gérer vos besoins en emballage avec facilité.",
     "keywords": "factures, facturation, finance, paiements"
+  },
+  "HeroSection": {
+    "title": "Simplification des opérations de E-commerce",
+    "description": "Notre plateforme aide les entreprises e-commerce à gérer la facturation, optimiser la préparation des commandes, gérer les stocks et fournir des outils comme un calculateur de devis et des tableaux de bord financiers pour surveiller les performances.",
+    "getStarted": "Commencer"
+  },
+  "LoginForm": {
+    "headerLabel": "Bon retour !",
+    "backButtonLabel": "Vous n'avez pas de compte ? Inscrivez-vous",
+    "welcomeMessage": "Veuillez vous connecter pour continuer.",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "utilisateur@exemple.com",
+    "passwordLabel": "Mot de passe",
+    "passwordPlaceholder": "******",
+    "loginButton": "Se connecter"
+  },
+  "RegisterForm": {
+    "headerLabel": "Créer un compte",
+    "backButtonLabel": "Vous avez déjà un compte ? Connectez-vous",
+    "welcomeMessage": "Veuillez créer un compte pour continuer.",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": " Verifier votre email",
+    "passwordLabel": "Mot de passe",
+    "passwordPlaceholder": "******",
+    "usernameLabel": "Nom d'utilisateur",
+    "usernamePlaceholder": "JohnDoe",
+    "registerButton": "S'inscrire"
+  },
+  "AuthValidation": {
+    "emailRequired": "L'email est requis",
+    "passwordRequired": "Le mot de passe est requis",
+    "usernameRequired": "Le nom d'utilisateur est requis"
+  },
+  "serverValidation": {
+    "invalidFields": "Champs invalides !",
+    "emailSent": "Email envoyé !",
+    "emailExists": "L'email existe déjà !"
   }
 }

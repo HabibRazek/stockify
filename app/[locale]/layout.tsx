@@ -1,14 +1,13 @@
-import type { Metadata } from "next";
 import "../globals.css";
 import { ReactNode } from "react";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import { getMessages, getTranslations } from "next-intl/server";
 import { Providers } from "../providers";
 import { locales } from "@/config";
 
 
 export function generateStaticParams() {
-  return locales.map((locale) => ({locale}));
+  return locales.map((locale) => ({ locale }));
 }
 
 
@@ -29,21 +28,21 @@ export async function generateMetadata({
     }
   };
 }
+
 type Props = {
   children: ReactNode;
   params: { locale: string };
 }
 
 export default async function RootLayout({ children, params: { locale } }: Props) {
-  
-  const messages = await getMessages();
-  unstable_setRequestLocale(locale);
+
+  const messages = await getMessages({ locale });
 
   return (
     <html lang={locale} suppressHydrationWarning>
       <body>
         <Providers>
-          <NextIntlClientProvider messages={messages}>
+          <NextIntlClientProvider locale={locale} messages={messages}>
             {children}
           </NextIntlClientProvider>
         </Providers>

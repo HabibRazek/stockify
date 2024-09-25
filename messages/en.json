@@ -2,8 +2,7 @@
   "NavBar": {
     "welcome": "Welcome to Stockify 👋",
     "description": "Manage your packaging needs with ease.",
-    "login": "Login",
-    "register": "Register"
+    "connectNow": "Connect now"
   },
   "LocaleSwitcher": {
     "label": "Change language",
@@ -13,5 +12,42 @@
     "title": "Stockify",
     "description": "Stockify is a platform that helps you manage your packaging needs with ease.",
     "keywords": "invoices, billing, finance, payments"
+  },
+  "HeroSection": {
+    "title": "Simplifying E-commerce Operations",
+    "description": "Our platform helps e-commerce businesses manage invoicing, optimize order fulfillment, manage inventory, and provide tools like a quote calculator and financial dashboards to monitor performance.",
+    "getStarted": "Get started"
+  },
+  "LoginForm": {
+    "headerLabel": "Welcome back!",
+    "backButtonLabel": "Don’t have an account? Sign up",
+    "welcomeMessage": "Please log in to continue.",
+    "emailLabel": "Email",
+    "emailPlaceholder": "user@example.com",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "******",
+    "loginButton": "Login"
+  },
+  "RegisterForm": {
+    "headerLabel": "Create an account",
+    "backButtonLabel": "Already have an account? Sign in",
+    "welcomeMessage": "Please create an account to continue.",
+    "emailLabel": "Email",
+    "emailPlaceholder": "user@example.com",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "******",
+    "usernameLabel": "Username",
+    "usernamePlaceholder": "JohnDoe",
+    "registerButton": "Register"
+  },
+  "AuthValidation": {
+    "emailRequired": "Email is required",
+    "passwordRequired": "Password is required",
+    "usernameRequired": "Username is required"
+  },
+  "serverValidation": {
+    "invalidFields": "Invalid fields!",
+    "emailSent": "Email sent!",
+    "emailExists": "Email already exists!"
   }
 }
